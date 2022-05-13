@@ -4,8 +4,6 @@ const request = require('request-promise')
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// const apiKey = `435cb63024169f3d3057318f46559006`;
-
 const generateScraperUrl = (apiKey) => `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`
 
 app.use(express.json())
